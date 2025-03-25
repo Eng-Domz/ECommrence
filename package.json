@@ -1,5 +1,6 @@
 {
-  "homepage": "https://eng-Domz.github.io/ECommrence",
+  "homepage": "https://eng-domz.github.io/ECommrence",
+  "name" : "ECommrence",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,6 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
+    "serve": "vite preview",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
