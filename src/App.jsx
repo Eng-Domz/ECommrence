@@ -36,13 +36,15 @@ const provider = createBrowserRouter([
     {path:"productDetails/:id",element: <ProtectedRoute><ProductDetails/></ProtectedRoute>},
     {path :"/*" ,element: <NotFoundPage/>},
   ]}
-])
+], {
+  basename: "/ECommrence"  // Must match your repo name exactly
+})
 function App() {
 
   return (
 
     <UserContextProvider>
-      <RouterProvider router={provider} />
+      <RouterProvider basename="/ECommrence" router={provider} />
     </UserContextProvider>
 
   )
