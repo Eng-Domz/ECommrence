@@ -36,9 +36,7 @@ const provider = createBrowserRouter([
     {path:"productDetails/:id",element: <ProtectedRoute><ProductDetails/></ProtectedRoute>},
     {path :"/*" ,element: <NotFoundPage/>},
   ]}
-], {
-  basename: "/ECommrence"
-})
+])
 function App() {
 
   return (
